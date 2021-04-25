@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Keyboard</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="keyboard.css">
+</head>
+
+<body>
+
+    <main>
+
+
+        <textarea class="use-keyboard-input just-input-area" contenteditable="true" id="display"></textarea>
+
+        <div class="keyboard keyboard--hidden">
+            <div class="keyboard__keys">
+
+                <div class="row1">
+                    <button data-key="192" class="keyboard__key letter">`</button>
+                    <button data-key="49" class="keyboard__key letter">1</button>
+                    <button data-key="50" class="keyboard__key letter">2</button>
+                    <button data-key="51" class="keyboard__key letter">3</button>
+                    <button data-key="52" class="keyboard__key letter">4</button>
+                    <button data-key="53" class="keyboard__key letter">5</button>
+                    <button data-key="54" class="keyboard__key letter">6</button>
+                    <button data-key="55" class="keyboard__key letter">7</button>
+                    <button data-key="56" class="keyboard__key letter">8</button>
+                    <button data-key="57" class="keyboard__key letter">9</button>
+                    <button data-key="48" class="keyboard__key letter">0</button>
+                    <button data-key="189" class="keyboard__key letter">-</button>
+                    <button data-key="187" class="keyboard__key letter">=</button>
+                    <button data-key="8" class="keyboard__key keyboard__key--wide" id="backspace">
+                        <img src="/assets/backspace.png">
+                    </button>
+                </div>
+
+                <div class="row2">
+                    <button data-key="81" class="keyboard__key letter">q</button>
+                    <button data-key="87" class="keyboard__key letter">w</button>
+                    <button data-key="69" class="keyboard__key letter">e</button>
+                    <button data-key="82" class="keyboard__key letter">r</button>
+                    <button data-key="84" class="keyboard__key letter">t</button>
+                    <button data-key="89" class="keyboard__key letter">y</button>
+                    <button data-key="85" class="keyboard__key letter">u</button>
+                    <button data-key="73" class="keyboard__key letter">i</button>
+                    <button data-key="79" class="keyboard__key letter">o</button>
+                    <button data-key="80" class="keyboard__key letter">p</button>
+                    <button data-key="219" class="keyboard__key letter">{</button>
+                    <button data-key="221" class="keyboard__key letter">}</button>
+                    <button data-key="220" class="keyboard__key letter">\</button>
+                </div>
+                <div class="row3">
+                    <button data-key="20" class="keyboard__key keyboard__key--wide keyboard__key--activatable"
+                        id="caps">
+                        <img src="/assets/keyboard_capslock.png">
+                    </button>
+                    <button data-key="65" class="keyboard__key letter">a</button>
+                    <button data-key="83" class="keyboard__key letter">s</button>
+                    <button data-key="68" class="keyboard__key letter">d</button>
+                    <button data-key="70" class="keyboard__key letter">f</button>
+                    <button data-key="71" class="keyboard__key letter">g</button>
+                    <button data-key="72" class="keyboard__key letter">h</button>
+                    <button data-key="74" class="keyboard__key letter">j</button>
+                    <button data-key="75" class="keyboard__key letter">k</button>
+                    <button data-key="76" class="keyboard__key letter">l</button>
+                    <button data-key="186" class="keyboard__key letter">;</button>
+                    <button data-key="222" class="keyboard__key letter">'</button>
+                    <button data-key="13" class="keyboard__key keyboard__key--wide" id="enter">
+                        <img src="/assets/keyboard_return.png">
+                    </button>
+                </div>
+                <div class="row4">
+                    <button data-key="16" class="keyboard__key keyboard__key--wide keyboard__key--activatable"
+                        id="shift">
+                        <img src="/assets/arrow_circle_up.png" width="30px" height="30px">
+                    </button>
+                    <button data-key="90" class="keyboard__key letter">z</button>
+                    <button data-key="88" class="keyboard__key letter">x</button>
+                    <button data-key="67" class="keyboard__key letter">c</button>
+                    <button data-key="86" class="keyboard__key letter">v</button>
+                    <button data-key="66" class="keyboard__key letter">b</button>
+                    <button data-key="78" class="keyboard__key letter">n</button>
+                    <button data-key="77" class="keyboard__key letter">m</button>
+                    <button data-key="188" class="keyboard__key letter">,</button>
+                    <button data-key="190" class="keyboard__key letter">.</button>
+                    <button data-key="191" class="keyboard__key letter">/</button>
+                </div>
+
+                <div class="row5">
+                    <button data-key="65" class="keyboard__key keyboard__key--dark keyboard__key--wide" id="done">
+                        <img src="/assets/done_all.png">
+                    </button>
+                    <button data-key="65" class="keyboard__key" id="volume">
+                        <img src="/assets/volume_off.png">
+                    </button>
+                    <button data-key="32" class="keyboard__key keyboard__key--extra-wide" id="space">
+                        <img src="/assets/space_bar.png">
+                    </button>
+                    <button data-key="65" class="keyboard__key" id="micro">
+                        <img src="/assets/mic_off.png">
+                    </button>
+                    <button data-key="65" class="keyboard__key" id="lang">en
+                        <i class="material-icons"></i></button>
+                    <button data-key="37" class="keyboard__key" id="arrow_left">
+                        <img src="/assets/arrow_left.png">
+                        <button data-key="39" class="keyboard__key" id="arrow_right">
+                            <img src="/assets/arrow_right.png">
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <audio src="/assets/kick.wav" class="audio-russian"></audio>
+    <audio src="/assets/tom.wav" class="audio-english"></audio>
+    <audio src="/assets/tink.wav" class="audio-enter"></audio>
+    <audio src="/assets/openhat.wav" class="audio-shift"></audio>
+    <audio src="/assets/ride.wav" class="audio-caps"></audio>
+    <audio src="/assets/snare.wav" class="audio-backspace"></audio>
+
+    <script src="/keyboard-main.js"></script>
+    <script src="/keyboard.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>
