@@ -10,4 +10,4 @@ Task: ***https://github.com/rolling-scopes-school/tasks/blob/master/tasks/ready-
 
 Score: 52 / 60
 
-## Improved deploy: ***https://nazdac-new-keyboard.netlify.app/***
+## Improved deploy: ***https://nazdac-keyboard.netlify.app/***
